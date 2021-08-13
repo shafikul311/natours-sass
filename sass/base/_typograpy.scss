@@ -1,43 +1,5 @@
 
 
-// abstracts 
-@import "abstracts/function";
-@import "abstracts/mixin";
-@import "abstracts/variable";
-
-// base
-@import "base/animation";
-@import "base/base";
-@import "base/typograpy";
-@import "base/utlities";
-
-// components
-@import "components/button";
-
-// layout
-@import "layout/header";
-
-// pages
-@import "pages/home";
-
-                   
-
-
-
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    
-
-}
-
-html {
-    font-size: 62.5%;
-}
-
 
 // body style
 
@@ -48,12 +10,7 @@ body {
     color: #777;
     padding: 2.5rem;
     backface-visibility: hidden;
-    box-sizing: border-box;
 }
-
-
-
-
 
 
 .heading-primary {
@@ -84,10 +41,4 @@ body {
     }
 
 }
-
-
-
-
-
-
 
