@@ -88,6 +88,23 @@ body {
   animation-timing-function: ease-out;
 }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #55c57a, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  transition: all 0.2s;
+}
+
+.heading-secondary:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
 .heading-tertiary {
   font-size: 1.6rem;
   font-weight: 700;
@@ -194,9 +211,32 @@ body {
   transform: translateY(0);
 }
 
+.features-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  border-radius: 3px;
+  text-align: center;
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+
+.features-box__icon {
+  font-size: 6rem;
+  margin-bottom: .5rem;
+  display: inline-block;
+  background-image: linear-gradient(to right, #55c57a, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.features-box:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.801), rgba(40, 180, 133, 0.801)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
@@ -272,23 +312,19 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh;
+  margin-bottom: -10rem;
 }
 
-.heading-secondary {
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  display: inline-block;
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
-  -webkit-background-clip: text;
-  color: transparent;
-  letter-spacing: .2rem;
-  transition: all 0.2s;
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.801), rgba(40, 180, 133, 0.801)), url(../../img/nat-4.jpg);
+  background-size: cover;
+  background-position: top;
+  transform: skewY(-7deg);
 }
 
-.heading-secondary:hover {
-  transform: skewY(2deg) skewX(15deg) scale(1.1);
-  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+.section-features > * {
+  transform: skewY(7deg);
 }
 
 .composition {
@@ -322,8 +358,12 @@ body {
 
 .composition__photo:hover {
   outline: 1.5rem solid #28b485;
+  transform: scale(1.05) translateY(-0.5rem);
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5);
   z-index: 20;
-  transform: scale(1.3);
+}
+
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(0.95);
 }
 /*# sourceMappingURL=main.css.map */
