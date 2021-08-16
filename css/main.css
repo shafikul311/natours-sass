@@ -234,6 +234,94 @@ body {
   transform: translateY(-1.5rem) scale(1.03);
 }
 
+.card {
+  perspective: 150rem;
+  -moz-background-color: 150rem;
+  font-size: 2rem;
+  height: 50rem;
+  position: relative;
+}
+
+.card__side {
+  background-color: #fff;
+  height: 50rem;
+  transition: all .8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.card__side--font {
+  background-color: #fff;
+}
+
+.card__side--back {
+  transform: rotateY(180deg);
+}
+
+.card__side--back-1 {
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7700);
+}
+
+.card:hover .card__side--font {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .card__side--back {
+  transform: rotateY(0);
+}
+
+.card__picture {
+  background-size: cover;
+  height: 23rem;
+  background-blend-mode: screen;
+  clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+}
+
+.card__picture-1 {
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7700), url(../../img/nat-5.jpg);
+}
+
+.card__picture-2 {
+  background-image: url(../../img/nat-5.jpg);
+}
+
+.card__picture-3 {
+  background-image: url(../../img/nat-5.jpg);
+}
+
+.card__heading {
+  font-size: 2.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+  color: #fff;
+  position: absolute;
+  top: 12rem;
+  right: 2rem;
+  width: 75%;
+}
+
+.card__heading-span {
+  padding: 1rem 1.5rem;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.card__heading-span-1 {
+  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 0, 0.85));
+}
+
+.card__details ul {
+  list-style-type: none;
+}
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
@@ -312,7 +400,7 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh;
-  margin-bottom: -10rem;
+  margin-bottom: -8rem;
 }
 
 .section-features {
@@ -325,6 +413,12 @@ body {
 
 .section-features > * {
   transform: skewY(7deg);
+}
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0 50rem 0;
+  margin-top: -10rem;
 }
 
 .composition {
