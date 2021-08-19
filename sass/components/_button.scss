@@ -1,7 +1,7 @@
 // button style
 
 .btn {
-
+    &,
     &:link ,
     &:visited {
         text-transform: uppercase;
@@ -12,6 +12,11 @@
         transition: all 0.2s;
         position: relative;
         font-size: 1.6rem;
+
+        // for button element
+
+        border: none;
+        cursor: pointer;
         
     }
 
@@ -44,7 +49,9 @@
         }
     }
 
-    &:active {
+    &:active,
+    &:focus {
+        outline: none;
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba( $color-black , 0.2);
     }
