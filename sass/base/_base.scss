@@ -12,12 +12,34 @@
 }
 
 html {
-    font-size: 62.5%;
+
+    // it define 1rem = what ?
+    font-size: 62.5%;  // 1 rem = 10px  and  10px/16ox = 62.5%
+
+
+   
+
+    @include respond(tab-land){ // width < 1200px
+        font-size: 56.25%;
+    }
+
+    @include respond(tab-port){ // width < 900px
+        font-size: 50%;
+    }
+
+    @include respond(big-desktop){
+        font-size: 75%;
+    }
 }
 
 
 
 body {
     box-sizing: border-box;
+    padding: 2.5rem;
+
+    @include respond(tab-port){
+        padding: 0;
+    }
 }
 
