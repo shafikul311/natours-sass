@@ -582,6 +582,10 @@ body {
   transform: translateX(-4rem) scale(1);
   backface-visibility: hidden;
   filter: blur(3px) brightness(80%);
+  -webkit-transform: translateX(-4rem) scale(1);
+  -moz-transform: translateX(-4rem) scale(1);
+  -ms-transform: translateX(-4rem) scale(1);
+  -o-transform: translateX(-4rem) scale(1);
 }
 
 .story__text {
@@ -828,7 +832,6 @@ body {
   background-position: top;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
 }
 
 @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
@@ -840,7 +843,6 @@ body {
 @media (max-width: 37.5em) {
   .header {
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0% 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0% 100%);
   }
 }
 
@@ -1358,4 +1360,3 @@ body {
 .composition:hover .composition__photo:not(:hover) {
   transform: scale(0.95);
 }
-/*# sourceMappingURL=main.css.map */
