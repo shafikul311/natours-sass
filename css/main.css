@@ -1121,6 +1121,12 @@ body {
   display: inline-block;
 }
 
+@media (max-width: 37.5em) {
+  .navigation__link:link, .navigation__link:visited {
+    font-size: 1.5rem;
+  }
+}
+
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
   color: #7ed56f;

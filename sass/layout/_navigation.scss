@@ -108,6 +108,10 @@
                 margin-right: 1.5rem;
                 display: inline-block;
             }
+
+            @include respond(phone){
+                font-size: 1.5rem;
+            }
            
 
         }
