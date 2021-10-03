@@ -799,6 +799,12 @@ body {
   -webkit-hyphens: auto;
 }
 
+@media (max-width: 56.25em) {
+  .popup__text {
+    column-count: 1;
+  }
+}
+
 .popup:target {
   opacity: 1;
   visibility: visible;
